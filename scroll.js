@@ -1,8 +1,9 @@
 // Detecta cuando se hace scroll hacia abajo
 window.addEventListener("scroll", function() {
+    var header = document.querySelector(".header--custom-background");
     if (window.scrollY > 0) {
-        document.header.classList.add("scrolled");
+        header.classList.add("scrolled");
     } else {
-        document.header.classList.remove("scrolled");
+        header.classList.remove("scrolled");
     }
 });
